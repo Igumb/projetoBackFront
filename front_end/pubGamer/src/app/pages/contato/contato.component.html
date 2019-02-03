@@ -1,0 +1,30 @@
+<body>
+	<div class="row l12 s12">
+		<div class="apresentacao2">
+			<fieldset><label>Quer falar conosco?</label>
+				<form #contato="ngForm" (ngSubmit)="onSubmit(contato)" action="#">
+					<p>
+				  		<label for="nome">Nome: </label>
+				  		<input id="nome" type="text" name="nome" ngModel required required #nome="ngModel">
+				  	</p>
+				  	<p>
+				  		<label for="email">e-mail: </label>
+				  		<input id="email" type="email" name="email" ngModel required required #email="ngModel">
+				  	</p>
+				  	<p>
+				  		<label for="assunto">Sobre o que se trata? </label>
+				  		<input id="assunto" form="form_id" name="assunto" ngModel required required #assunto="ngModel">
+				  	</p>
+				  	<p>
+				  		<button class="mola2" type="submit">Enviar :3</button>
+					</p>
+					<div *ngIf="nome.invalid && nome.touched|| email.invalid && email.touched||  assunto.invalid && assunto.touched">
+				  		<p>
+				  			Faltou preencher algo :(
+				  		</p>
+				  	</div>
+				</form>
+			</fieldset>
+		</div>
+	</div>		
+</body>

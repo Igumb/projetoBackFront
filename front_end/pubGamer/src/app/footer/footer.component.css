@@ -1,0 +1,35 @@
+.page-footer{
+	box-shadow: 0vw 0vh 30px 1px #000000;
+}
+
+.local{
+	width: 8%;
+	height: 4%;
+}
+
+.social{
+	padding-left: 1vw;
+	width: 8%;
+	height: 4%;
+}
+
+.copyright{
+	color: white;
+	font-size: 1.3em;
+	font-family: 'VT323', monospace;
+}
+
+.col-footer{
+	color: white;
+	font-size: 1.3em;
+	font-family: 'VT323', monospace;
+}
+
+@media (max-width:400px){
+    .copyright{
+        font-size:1em;
+    }
+    .col-footer{
+        font-size:1em;
+    }
+}

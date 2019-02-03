@@ -1,0 +1,143 @@
+
+.apresentacao2{
+	background-color: rgba(255, 0, 255, 1);
+	margin-bottom: 2vh;
+  margin-left: 0.5vw;
+	animation: shadow-Box 0.5s 0.5s forwards;
+}
+
+.row{
+  margin-top: 3vh;
+	margin-left: 3vw;
+	margin-right: 3vw;
+}
+
+.mola2{
+  font-size: 2em;
+  border: outset;
+  border-width: thin;
+  border-radius: 10px;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin: 3vw;
+  cursor: pointer;
+  background-color: rgba(255, 0, 255, 1);
+  box-shadow: 3px 3px 3px #1C1B1C;
+  font-family: 'VT323';
+}
+
+.mola2:hover{
+  animation: quica2 5s ease;
+}
+
+label{
+  font-size: 1em;
+  color: black;
+}
+
+button{
+  color: black;
+}
+
+p{
+	font-size: 1.5em;
+}
+
+body{
+	background-image: url("/../../assets/img/floresta.png");
+	background-position: center;
+	background-size: cover;
+  margin-top: -15vh;
+  padding-top: 70vh;
+  padding-bottom: 50vh;
+  font-family: 'VT323';
+}
+
+/*animação de botão que imita uma mola, mudando até mesmo a cor para dar uma noção de profundidade junto com a sombra aumentando*/
+@keyframes quica2{
+    0%, 100% {
+    background-color: rgba(255, 60, 255, 1);
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-size: 2em;
+    box-shadow: 4px 4px 3px #1C1B1C;
+    }
+    6% {
+    background-color: rgba(255, 0, 185, 1);
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    padding-left: 10.5vw;
+    padding-right: 10.5vw;
+    font-size: 2.5em;
+    box-shadow: 15px 15px 10px #1C1B1C;
+    }
+    14% {
+    background-color: rgba(255, 40, 255, 1);
+    padding-top: 0.7vh;
+    padding-bottom: 0.7vh;
+    padding-left: 9.5vw;
+    padding-right: 9.5vw;
+    font-size: 1.5em;
+    box-shadow: 0px 0px 0px #1C1B1C;
+    }
+    24%{
+    background-color: rgba(255, 0, 200, 1);
+    padding-top: 1.3vh;
+    padding-bottom: 1.3vh;
+    padding-left: 10.3vw;
+    padding-right: 10.3vw;
+    font-size: 2.3em;
+    box-shadow: 10px 10px 7px #1C1B1C;
+    }
+    38%{
+    background-color: rgba(255, 25, 255, 1);
+    padding-top: 0.8vh;
+    padding-bottom: 0.8vh;
+    padding-left: 9.7vw;
+    padding-right: 9.7vw;
+    font-size: 1.7em;
+    box-shadow: 1px 1px 1px #1C1B1C;
+    }
+    56%{
+    background-color: rgba(255, 0, 235, 1);
+    padding-top: 1.1vh;
+    padding-bottom: 1.1vh;
+    padding-left: 10.1vw;
+    padding-right: 10.1vw;
+    font-size: 2.1em;
+    box-shadow: 8px 8px 5px #1C1B1C;
+    }
+    78%{
+    background-color: rgba(255, 15, 255, 1);
+    padding-top: 0.9vh;
+    padding-bottom: 0.9vh;
+    padding-left: 9.8vw;
+    padding-right: 9.8vw;
+    font-size: 1.9em;
+    box-shadow: 3px 3px 2px #1C1B1C;
+    }
+}
+
+/*animação imitando uma caixa de dialogo de jogos em 8/16 bits*/
+@keyframes shadow-Box {
+  0% {
+    box-shadow: 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000;
+    transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: 1px 1px #000000, 2px 2px #000000, 3px 3px #000000, 4px 4px #000000, 5px 5px #000000, 6px 6px #000000, 7px 7px #000000, 8px 8px #000000;
+    transform: translateX(-8px) translateY(-8px);
+    transform: translateX(-8px) translateY(-8px);
+  }
+}
+
+@media (max-width:400px){
+    p{
+        font-size:1em;
+    }
+}

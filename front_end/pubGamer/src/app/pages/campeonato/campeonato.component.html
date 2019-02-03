@@ -1,0 +1,129 @@
+<body>
+	<div class="row">
+		<div class="col l3 s3">
+			<img alt="ícone de Counter Strike: Global Ofensive" class="icone cs" src="/../../assets/img/cs.jpg">
+		</div>
+		<div class="apresentacao col l9 s9">
+			<p>
+				CS: Onde mitos são criados e e ídolos são derrubados. Prepare seu melhor spray de AK e seu mais preciso quickshot de AWP para vencer aqui na Loadrink CS Cup.
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="apresentacao2 col l9 s9">
+			<p>
+				LOL: Torne-se uma lenda e conquiste Runeterra! Campeonatos 5x5 valendo honras e glórias. Só na Loadrink LoL Cup.
+			</p>
+		</div>
+		<div class="col l3 s3">
+			<img alt="ícone de League of Legends" class="icone lol" src="/../../assets/img/lol.jpg">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col l3 s3">
+			<img alt="íconde do Raibow six: Siege" class="icone cs" src="/../../assets/img/r6.jpg">
+		</div>
+		<div class="apresentacao3 col l9 s9">
+			<p>
+				R6: Os melhores Operadores do mundo reunidos para vencer na Loadrink Rainbow Six Siege Cup. 
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="apresentacao4 col l9 s9">
+			<p>
+				DOTA: Quem é o Roshan perto dos nosso hérois? Oblitere seus inimigos e conquiste as glórias dos Anciões. Vem jogar a Loadrink DOTA Cup.
+			</p>
+		</div>
+		<div class="col l3 s3">
+			<img alt="ícone do Dota" class="icone dota" src="/../../assets/img/dota.jpg">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col l3 s3">
+			<img alt="íconed do HearthStone" class="icone hs" src="/../../assets/img/hs.jpg">
+		</div>
+		<div class="apresentacao2 col l9 s9">
+			<p>
+				HS: Conte com muita sorte e o seu melhor deck para vencer seu inimigo em um 1x1 muito explosivo. Seja bem vindo a taverna, digo, Loadrink Hearthstone Cup!
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="apresentacao col l9 s9">
+			<p>
+				T7: Um dos mais saudosistas jogos de de luta da história finalmente chegou na Loadrink Cup. Prepare os dedos para os combos de King, Eddy e companhia na Loadrink Tekken 7 Cup.
+			</p>
+		</div>
+		<div class="col l3 s3">
+			<img alt="ícone do Tekken 7" class="icone tk" src="/../../assets/img/tk.jpg">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col l3 s3">
+			<img alt="ícone do Street Fighter V" class="icone cs" src="/../../assets/img/sf.jpg">
+		</div>
+		<div class="apresentacao3 col l9 s9">
+			<p>
+				SFV: Ryu, Ken, Sagat, Chun Li... Não importa, escolha seu melhor personagem e dê uma surra no seu adversário! Melhor que a EVO, conheça a Loadrink Street Fighter Cup.
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="apresentacao">
+			<fieldset><label>Quer se inscrever em algum campeonato?</label>
+				<form #campeonato="ngForm" (ngSubmit)="onSubmit(campeonato)" action="#">
+				    <p>
+				    	<input id="cs" value="cs" name="campeonato" ngModel required #categoria="ngModel" type="radio"/>
+						<label for="cs">Counter Strike: Global Ofensive</label>
+				  	</p>
+				  	<p>
+				    	<input id="lol" value="lol" name="campeonato" ngModel required #categoria="ngModel" type="radio"/>
+						<label for="lol">League of Legends</label>
+				  	</p>
+				  	<p>
+				    	<input id="r6" value="r6" name="campeonato" ngModel required #categoria="ngModel" type="radio"/>
+						<label for="r6">Raibow Six: Siege</label>
+				  	</p>
+				  	<p>
+				    	<input id="dota" value="dota" name="campeonato" ngModel required #categoria="ngModel" type="radio" />
+						<label for="dota">Dota 2</label>
+				  	</p>
+				  	<p>
+				    	<input id="ht" value="ht" name="campeonato" ngModel required #categoria="ngModel" type="radio"/>
+						<label for="ht">HearthStone</label>
+				  	</p>
+				  	<p>
+				    	<input id="tk" value="tk" name="campeonato" ngModel required #categoria="ngModel" type="radio"/>
+						<label for="tk">Tekken 7</label>
+				  	</p>
+				  	<p>
+				    	<input id="st" value="st" name="campeonato" ngModel required #categoria="ngModel" type="radio"/>
+						<label for="st">Street Fighter V</label>
+				  	</p>
+				  	<p>
+				  		<label for="nome">Nome: </label>
+				  		<input id="nome" type="text" name="nome" ngModel required required #nome="ngModel">
+				  	</p>
+				  	<p>
+				  		<label for="email">e-mail: </label>
+				  		<input id="email" type="email" name="email" ngModel required #email="ngModel">
+				  	</p>
+				  	<p>
+				  		<label for="data">Data para a vaga requisitada: </label>
+				  		<input id="data" type="date" name="data" ngModel required #data="ngModel">
+				  	</p>
+				  	<p>
+				  		<button class="mola1" type="submit">Enviar :3</button>
+
+				  	</p>
+				  	<div *ngIf="nome.invalid && nome.touched|| email.invalid && email.touched||  data.invalid && data.touched|| categoria.invalid && categoria.touched">
+				  		<p>
+				  			Campo(s) obrigatório(s) :(
+				  		</p>
+				  	</div>
+				</form>
+			</fieldset>
+		</div>
+	</div>	
+</body>	

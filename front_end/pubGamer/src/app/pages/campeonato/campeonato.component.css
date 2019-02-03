@@ -1,0 +1,284 @@
+.apresentacao{
+	background-color: rgba(0, 255, 223, 1);
+	margin-bottom: 2vh;
+ 	margin-left: 0.5vw;
+	animation: shadow-Box 0.5s 0.5s forwards;
+}
+
+.apresentacao2{
+	background-color: rgba(255, 0, 255, 1);
+	margin-bottom: 2vh;
+  margin-left: 0.5vw;
+	animation: shadow-Box 0.5s 0.5s forwards;
+}
+
+.apresentacao3{
+	background-color: rgba(75, 255, 0, 1);
+	margin-bottom: 2vh;
+ 	margin-left: 0.5vw;
+	animation: shadow-Box 0.5s 0.5s forwards;
+}
+
+.apresentacao4{
+	background-color: rgba(255, 210, 0, 1);
+	margin-bottom: 2vh;
+  margin-left: 0.5vw;
+	animation: shadow-Box 0.5s 0.5s forwards;
+}
+
+.icone{
+	width: 100%;
+}
+
+.cs{
+	box-shadow: 0vw 0vh 50px 0px #FFFFFF;
+}
+
+.lol{
+	box-shadow: 0vw 0vh 50px 0px #1A41FF;
+}
+
+.dota{
+	box-shadow: 0vw 0vh 50px 0px #FF8904;
+}
+
+.hs{
+	box-shadow: 0vw 0vh 50px 0px #6700FF;
+}
+
+.tk{
+	box-shadow: 0vw 0vh 50px 0px #DE003D;
+}
+
+.row{
+  margin-top: 3vh;
+	margin-left: 3vw;
+	margin-right: 3vw;
+}
+
+.mola1{
+  font-size: 2em;
+  border: outset;
+  border-width: thin;
+  border-radius: 10px;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin: 3vw;
+  cursor: pointer;
+  background-color: rgba(90, 228, 232, 1);
+  box-shadow: 3px 3px 3px #1C1B1C;
+  font-family: 'VT323';
+}
+
+.mola1:hover{
+  animation: quica1 5s ease;
+}
+
+label{
+  font-size: 1em;
+  color: black;
+}
+
+button{
+  color: black;
+}
+
+p{
+	font-size: 1.5em;
+}
+
+body{
+	background-image: url("/../../assets/img/cidade1.jpg");
+	background-position: center;
+	background-size: cover;
+	margin-top: -15vh;
+	padding-top: 70vh;
+	padding-bottom: 50vh;
+	font-family: 'VT323';
+}
+
+/*animação de botão que imita uma mola, mudando até mesmo a cor para dar uma noção de profundidade junto com a sombra aumentando*/
+@keyframes quica1{
+    0%, 100% {
+    background-color: rgba(90, 228, 232, 1);
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-size: 2em;
+    box-shadow: 4px 4px 3px #1C1B1C;
+    }
+    6% {
+    background-color: rgba(150, 232, 232, 1);
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    padding-left: 10.5vw;
+    padding-right: 10.5vw;
+    font-size: 2.5em;
+    box-shadow: 15px 15px 10px #1C1B1C;
+    }
+    14% {
+    background-color: rgba(20, 228, 232, 1);
+    padding-top: 0.7vh;
+    padding-bottom: 0.7vh;
+    padding-left: 9.5vw;
+    padding-right: 9.5vw;
+    font-size: 1.5em;
+    box-shadow: 0px 0px 0px #1C1B1C;
+    }
+    24%{
+    background-color: rgba(130, 228, 232, 1);
+    padding-top: 1.3vh;
+    padding-bottom: 1.3vh;
+    padding-left: 10.3vw;
+    padding-right: 10.3vw;
+    font-size: 2.3em;
+    box-shadow: 10px 10px 7px #1C1B1C;
+    }
+    38%{
+    background-color: rgba(40, 228, 232, 1);
+    padding-top: 0.8vh;
+    padding-bottom: 0.8vh;
+    padding-left: 9.7vw;
+    padding-right: 9.7vw;
+    font-size: 1.7em;
+    box-shadow: 1px 1px 1px #1C1B1C;
+    }
+    56%{
+    background-color: rgba(110, 228, 232, 1);
+    padding-top: 1.1vh;
+    padding-bottom: 1.1vh;
+    padding-left: 10.1vw;
+    padding-right: 10.1vw;
+    font-size: 2.1em;
+    box-shadow: 8px 8px 5px #1C1B1C;
+    }
+    78%{
+    background-color: rgba(70, 228, 232, 1);
+    padding-top: 0.9vh;
+    padding-bottom: 0.9vh;
+    padding-left: 9.8vw;
+    padding-right: 9.8vw;
+    font-size: 1.9em;
+    box-shadow: 3px 3px 2px #1C1B1C;
+    }
+}
+
+/*animação imitando uma caixa de dialogo de jogos em 8/16 bits*/
+@keyframes shadow-Box {
+  0% {
+    box-shadow: 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000, 0 0 #000000;
+    transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: 1px 1px #000000, 2px 2px #000000, 3px 3px #000000, 4px 4px #000000, 5px 5px #000000, 6px 6px #000000, 7px 7px #000000, 8px 8px #000000;
+    transform: translateX(-8px) translateY(-8px);
+     transform: translateX(-8px) translateY(-8px);
+  }
+}
+
+/*animação para piscar gif imitando tela de aparelho eletrônico ligando*/
+@keyframes piscar-Gif{
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  10.1% {
+    opacity: 1;
+  }
+  10.2% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  20.1% {
+    opacity: 1;
+  }
+  20.6% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  30.1% {
+    opacity: 1;
+  }
+  30.5% {
+    opacity: 1;
+  }
+  30.6% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  45.1% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 1;
+  }
+  55.1% {
+    opacity: 0;
+  }
+  57% {
+    opacity: 0;
+  }
+  57.1% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  60.1% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  65.1% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  75.1% {
+    opacity: 0;
+  }
+  77% {
+    opacity: 0;
+  }
+  77.1% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  85.1% {
+    opacity: 0;
+  }
+  86% {
+    opacity: 0;
+  }
+  86.1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width:400px){
+    p{
+        font-size:1em;
+    }
+}
